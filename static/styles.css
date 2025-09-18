@@ -1,3 +1,23 @@
+:root {
+    --primary-color: #2256a2;
+    --font-main: 'Inter', Arial, sans-serif;
+    --size-base: 16px;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: var(--size-base);
+    scroll-behavior: smooth;
+  }
+  *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-main);
+    color: #222;
+    background: #fff;
+    line-height: 1.5;
+  }
+
+
 * {
     margin: 0;
     padding: 0;
