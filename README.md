@@ -2,4 +2,4 @@
 ## Проект
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://rnzzz1.github.io/my-project-12/index.html)
+- [Публичная страница на GitHub Pages](https://rnzzz1.github.io/my-project-12/)
