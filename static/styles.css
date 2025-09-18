@@ -20,9 +20,9 @@ label {
 }
 
 input {
-    border: 3px solid purple;
+    border: 3px solid yellow;
     border-radius: 10px;
-    background-color: honeydew;
+    background-color: white;
     color: blueviolet;
     padding: 5px;
     margin-top: 5px;
@@ -44,14 +44,14 @@ button:hover {
 #ContactForm {
     border: 3px solid purple;
     border-radius: 10px;
-    background-color: honeydew;
+    background-color: white;
     padding: 10px;
     max-width: 550px;
 }
 
 .error {
     border: 3px solid red;
-    background-color: honeydew;
+    background-color: white;
     color: brown;
     border-radius: 10px;
     padding: 7px;
