@@ -34,3 +34,26 @@ function removeError(input) {
     }
     input.style.borderColor = 'purple'
 }
+const form = document.querySelector('.form');
+const modal = document.getElementById('modal');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let valid = true;
+
+  form.querySelectorAll('.form__input').forEach(input => {
+    const error = input.nextElementSibling;
+    if (!input.checkValidity()) {
+      error.textContent = 'Пожалуйста, заполните поле корректно';
+      valid = false;
+    } else {
+      error.textContent = '';
+    }
+  });
+
+  if (valid) {
+    modal.showModal();
+    form.reset();
+  }
+});

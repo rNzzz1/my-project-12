@@ -122,4 +122,99 @@
     font-weight: 600;
     color: var(--primary-color);
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .breadcrumbs__list {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+  
+  .breadcrumbs__item::after {
+    content: "›";
+    margin-left: 0.5rem;
+  }
+  
+  .breadcrumbs__item:last-child::after {
+    content: "";
+  }
+  
+  .breadcrumbs__link {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .breadcrumbs__link:focus-visible,
+  .breadcrumbs__link:hover {
+    text-decoration: underline;
+  }
+  
+  .anchor:target {
+    outline: 2px solid var(--primary-color);
+    scroll-margin-top: 1rem;
+    background-color: #eaf3ffcc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form__input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form__input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(34, 86, 162, 0.3);
+  }
+  
+  .form__button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .form__button:hover,
+  .form__button:focus-visible {
+    background-color: #1a4084;
+  }
+  
+  .form__error {
+    color: red;
+    font-size: 0.875rem;
+    min-height: 1.2em;
+  }
+  
+  /* Стили модального окна */
+  .modal {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
   

@@ -13,13 +13,14 @@
     <header class="header">
         <nav class="header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link nav__link--active">Главная</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
       </header>
       
+
     <!-- Верхняя часть страницы -->
     <header>
        <a href="index.html">Логотип</a>
@@ -33,6 +34,25 @@
     </header>
     
     <!-- Основная часть страницы -->
+    <form class="form" id="contactForm" novalidate>
+        <label for="name">Имя</label>
+        <input class="form__input" type="text" id="name" name="name" required />
+        <span class="form__error error" aria-live="polite"></span>
+      
+        <label for="email">Email</label>
+        <input class="form__input" type="email" id="email" name="email" required />
+        <span class="form__error error" aria-live="polite"></span>
+      
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+      
+      <dialog class="modal" id="modal">
+        <form method="dialog">
+          <p>Спасибо за отправку!</p>
+          <button type="button" onclick="document.getElementById('modal').close();">Закрыть</button>
+        </form>
+      </dialog>
+      
     <main>
         <h1>Добро пожаловать на наш сайт!</h1>
 
